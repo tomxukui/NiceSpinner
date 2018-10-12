@@ -134,10 +134,10 @@ public class NiceSpinner extends AppCompatTextView {
         mDropDownListPaddingBottom = 0;
         mTextBackgroundSelector = R.drawable.selector;
         mListBackgroundSelector = R.drawable.selector;
-        mTextPaddingLeft = 0;
-        mTextPaddingTop = 0;
-        mTextPaddingRight = 0;
-        mTextPaddingBottom = 0;
+        mTextPaddingLeft = dp2px(context, 20);
+        mTextPaddingTop = dp2px(context, 12);
+        mTextPaddingRight = dp2px(context, 20);
+        mTextPaddingBottom = dp2px(context, 12);
 
         if (attrs != null) {
             TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.NiceSpinner, defStyleAttr, 0);
@@ -378,6 +378,14 @@ public class NiceSpinner extends AppCompatTextView {
         listView.measure(widthSpec, heightSpec);
         popupWindow.setWidth(listView.getMeasuredWidth());
         popupWindow.setHeight(listView.getMeasuredHeight() - mDropDownListPaddingBottom);
+    }
+
+    /**
+     * 根据手机的分辨率从dp 的单位 转成为px(像素)
+     */
+    private int dp2px(Context context, float dpValue) {
+        float density = context.getResources().getSystem().getDisplayMetrics().density;
+        return (int) (dpValue * density + 0.5f);
     }
 
     public void setTintColor(@ColorRes int resId) {
