@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="NiceSpinner">
-        <attr name="arrowTint" format="color" />
-        <attr name="hideArrow" format="boolean" />
-        <attr name="arrowDrawable" format="reference|color"/>
-        <attr name="dropDownListPaddingBottom" format="dimension"/>
-        <attr name="backgroundSelector" format="integer"/>
-        <attr name="textTint" format="color"/>
+        <attr name="ns_textColor" format="color"/>
+        <attr name="ns_listTextColor" format="color"/>
+        <attr name="ns_arrowTint" format="color" />
+        <attr name="ns_hideArrow" format="boolean" />
+        <attr name="ns_arrowDrawable" format="reference|color"/>
+        <attr name="ns_dropDownListPaddingBottom" format="dimension"/>
+        <attr name="ns_textBackgroundSelector" format="integer"/>
+        <attr name="ns_listBackgroundSelector" format="integer"/>
+        <attr name="ns_textPaddingLeft" format="dimension"/>
+        <attr name="ns_textPaddingTop" format="dimension"/>
+        <attr name="ns_textPaddingRight" format="dimension"/>
+        <attr name="ns_textPaddingBottom" format="dimension"/>
     </declare-styleable>
 </resources>
