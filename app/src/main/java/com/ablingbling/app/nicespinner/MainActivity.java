@@ -1,13 +1,14 @@
 package com.ablingbling.app.nicespinner;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 
 import com.ablingbling.library.nicespinner.NiceSpinner;
 
 import java.util.Arrays;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 

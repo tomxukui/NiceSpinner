@@ -8,4 +8,5 @@ public class SimpleSpinnerTextFormatter implements SpinnerTextFormatter {
     @Override public Spannable format(String text) {
         return new SpannableString(text);
     }
+
 }

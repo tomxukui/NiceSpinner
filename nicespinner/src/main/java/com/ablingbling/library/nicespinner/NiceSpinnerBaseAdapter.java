@@ -2,12 +2,13 @@ package com.ablingbling.library.nicespinner;
 
 import android.content.Context;
 import android.os.Build;
-import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+
+import androidx.annotation.Nullable;
+import androidx.core.content.ContextCompat;
 
 @SuppressWarnings("unused")
 public abstract class NiceSpinnerBaseAdapter<T> extends BaseAdapter {
